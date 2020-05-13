@@ -1,5 +1,5 @@
 const pEmbed = require('./../embeds/eProfile.js');
-exports.run = (client, message, args, sql, Discord) =>{
+exports.run = (client, message, args, Discord) =>{
     message.channel.send("Pinging...").then(m => {
         let ping = m.createdTimestamp - message.createdTimestamp
         let choices = ["Is this really my ping", "Is it okay? I cant look", "I hope it isnt bad"]
