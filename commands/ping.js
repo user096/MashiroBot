@@ -1,13 +1,5 @@
-module.exports = { 
-    config: {
-        name: "ping",
-        description: "checks the latency of the bot",
-        usage: "F#ping",
-        category: "miscellaneous",
-        accessableby: "Members"
-    },
-    run: async (bot, message, args) => {
-
+const pEmbed = require('./../embeds/eProfile.js');
+exports.run = (client, message, args, sql, Discord) =>{
     message.channel.send("Pinging...").then(m => {
         let ping = m.createdTimestamp - message.createdTimestamp
         let choices = ["Is this really my ping", "Is it okay? I cant look", "I hope it isnt bad"]
@@ -16,4 +8,3 @@ module.exports = {
         m.edit(`${response}: Bot Latency: \`${ping}\`, API Latency: \`${Math.round(bot.ping)}\``)
     })
   }
-}
