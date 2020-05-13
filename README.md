@@ -2,7 +2,7 @@
 
 A level system bot written in JavaScript using [discord.js](https://github.com/discordjs/discord.js) Library
 
-will be editing the build soon
+will be editing the build soon to add more commands
 
 | Command | Description |
 | ------ | ------ |
